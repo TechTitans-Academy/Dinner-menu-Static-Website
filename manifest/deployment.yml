@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: menu-deployment
+  labels:
+    app: menu
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: menu
+  template:
+    metadata:
+      labels:
+        app: menu
+    spec:
+      containers:
+      - name: menu
+        image: techtitansacademy/menu:latest
