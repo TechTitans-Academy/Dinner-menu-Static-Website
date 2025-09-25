@@ -15,7 +15,7 @@ spec:
         app: menu-dinner
     spec:
       containers:
-        - name: menu-dinner
-          image: techtitansacademy/menu:latest   # <-- replace with your image
+        - name: dinner-menu-ui
+          image: techtitansacademy/dinner-menu-ui   # <-- replace with your image
           ports:
             - containerPort: 8888
