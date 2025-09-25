@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: dinner-menu-ui
-          image: techtitansacademy/dinner-menu-ui   # <-- replace with your image
+          image: techtitansacademy/dinner-menu-ui
           ports:
             - containerPort: 8888
