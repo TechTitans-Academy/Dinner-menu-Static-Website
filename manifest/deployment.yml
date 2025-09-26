@@ -6,6 +6,11 @@ metadata:
     app: menu-dinner
 spec:
   replicas: 6
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
   selector:
     matchLabels:
       app: menu-dinner
