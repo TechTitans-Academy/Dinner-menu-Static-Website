@@ -21,6 +21,6 @@ spec:
     spec:
       containers:
         - name: dinner-menu-ui
-          image: techtitansacademy/dinner-menu-ui:41
+          image: techtitansacademy/dinner-menu-ui:42
           ports:
             - containerPort: 8888
