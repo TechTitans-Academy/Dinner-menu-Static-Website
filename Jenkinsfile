@@ -51,7 +51,7 @@ pipeline {
                 withKubeConfig([credentialsId: 'kubeconfig', serverUrl: 'https://192.168.49.2:8443']) {
                     sh '''
                         ARGOCD_PASS=$(kubectl get secret -n argocd argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d)
-                        argocd login 172.105.51.7:30391 --username admin --password $ARGOCD_PASS --insecure
+                        argocd login 172.105.51.7:32619 --username admin --password $ARGOCD_PASS --insecure
                         argocd app sync dinner-menu-ui
                     '''
                 }
